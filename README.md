@@ -78,15 +78,15 @@ EJERCICIO 5
 Explicar que son conceptualmente, qué datos almacenan en forma estándar y cómo se relacionan el resto (algunos no se relacionan entre sí) cada uno de los siguientes objetos de Salesforce:
 
 
-1.	Lead un potencial cliente que demostró interés en un producto o servicio ofrecido por la marca a través de la interacción con contenidos y otros materiales.
-2.	Account cuenta de un cliente 
-3.	Contact. Cliente ya comvertido con todos sus datos
-4.	Opportunity posoble cliente el cual falta informacion para transformar en contacto
-5.	Product Producto que la empresa comercia 
-6.	PriceBook lista de productos con sus respectivos precios
-7.	Quote items conciderados como oportunidad
-8.	Asset Representa un objeto con valor comercial
-9.	Case es una pregunta,un feedback o una recomencdacion del cliente
+1.	Lead un potencial cliente que demostró interés en un producto o servicio ofrecido por la marca a través de la interacción con contenidos y otros materiales.(Datos de usuario)
+2.	Account cuenta de un cliente (Datos de usuario)
+3.	Contact. Cliente ya comvertido con todos sus datos (Datos de usuario)
+4.	Opportunity posoble cliente el cual falta informacion para transformar en contacto(Datos de usuario)
+5.	Product Producto que la empresa comercia (Datos de producto)
+6.	PriceBook lista de productos con sus respectivos precios (Datos de producto)
+7.	Quote items conciderados como oportunidad (Datos de producto)
+8.	Asset Representa un objeto con valor comercial (Datos de producto)
+9.	Case es una pregunta,un feedback o una recomencdacion del cliente 
 10.	Article Descipcion en salesforce
 
 EJERCICIO 7
@@ -203,6 +203,23 @@ M.	¿Qué es Kanban?
 es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios
 
 N.	¿Qué es un ERP? ¿Salesforce es un ERP?
-son los sistemas de información gerenciales que integran y manejan muchos de los negocios asociados con las operaciones de producción y de los aspectos de distribución de una compañía en la producción de bienes o servicios.
+son los sistemas de información gerenciales que integra
+n y manejan muchos de los negocios asociados con las operaciones de producción y de los aspectos de distribución de una compañía en la producción de bienes o servicios.
 
 Salesforce es un ERP
+
+
+
+
+
+
+Imagenes
+![Screen Shot 2021-06-24 at 19 11 12](https://user-images.githubusercontent.com/86447218/123350152-008f6780-d520-11eb-8579-b24375a35a09.png)
+![2fb5f9f4-ddab-4a61-bcce-9d52f5083741](https://user-images.githubusercontent.com/86447218/123357157-afd33b00-d52e-11eb-8a90-7d48f7b86304.jpg)
+![93351ee2-f5a4-4c50-9cbd-368444c01f56](https://user-images.githubusercontent.com/86447218/123357159-b06bd180-d52e-11eb-8838-f4e16d453496.jpg)
+![28ca060d-b723-4db9-a55d-3cd7ff05e15b](https://user-images.githubusercontent.com/86447218/123357160-b06bd180-d52e-11eb-993c-b0b3a333a7ad.jpg)
+![08a124e9-3b40-4120-b452-d48f37c303ae](https://user-images.githubusercontent.com/86447218/123357161-b1046800-d52e-11eb-9a0e-21e8b6411114.jpg)
+![2fb5f9f4-ddab-4a61-bcce-9d52f5083741-1](https://user-images.githubusercontent.com/86447218/123357164-b19cfe80-d52e-11eb-8967-196de93c98f6.jpg)
+
+
+
