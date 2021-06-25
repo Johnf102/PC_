@@ -89,6 +89,14 @@ Explicar que son conceptualmente, qué datos almacenan en forma estándar y cóm
 9.	Case es una pregunta,un feedback o una recomencdacion del cliente 
 10.	Article Descipcion en salesforce
 
+EJERCICIO 6
+1.
+2.![Screen Shot 2021-06-24 at 21 34 07](https://user-images.githubusercontent.com/86447218/123361211-46562b00-d534-11eb-8fba-f4fd62c6284d.png)
+![Screen Shot 2021-06-24 at 21 35 08](https://user-images.githubusercontent.com/86447218/123361218-481fee80-d534-11eb-82c9-87e1542c6249.png)
+![Screen Shot 2021-06-24 at 21 35 12](https://user-images.githubusercontent.com/86447218/123361223-49e9b200-d534-11eb-93a5-a6b938f4e4df.png)
+
+3.
+
 EJERCICIO 7
 Responder las siguientes preguntas brevemente sobre:
 Soluciones de Salesforce
