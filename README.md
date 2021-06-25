@@ -90,12 +90,39 @@ Explicar que son conceptualmente, qué datos almacenan en forma estándar y cóm
 10.	Article Descipcion en salesforce
 
 EJERCICIO 6
-1.
+1.![2fb5f9f4-ddab-4a61-bcce-9d52f5083741](https://user-images.githubusercontent.com/86447218/123357157-afd33b00-d52e-11eb-8a90-7d48f7b86304.jpg)
+
+
 2.![Screen Shot 2021-06-24 at 21 34 07](https://user-images.githubusercontent.com/86447218/123361211-46562b00-d534-11eb-8fba-f4fd62c6284d.png)
 ![Screen Shot 2021-06-24 at 21 35 08](https://user-images.githubusercontent.com/86447218/123361218-481fee80-d534-11eb-82c9-87e1542c6249.png)
 ![Screen Shot 2021-06-24 at 21 35 12](https://user-images.githubusercontent.com/86447218/123361223-49e9b200-d534-11eb-93a5-a6b938f4e4df.png)
 
-3.
+3. trigger PC on Contact(after insert, after update) {
+    List<Opportunity> oppList = new List<Opportunity>();
+    
+    
+    Map<Id,Contact> acctsWithOpps = new Map<Id,Contact>(
+        [SELECT Id,(SELECT Id FROM Opportunities) FROM Contact WHERE Id IN :Trigger.New]);
+    
+   
+    for(Contact a : Trigger.New) {
+        System.debug('acctsWithOpps.get(a.Id).Opportunities.size()=' + acctsWithOpps.get(a.Id).Opportunities.size());
+        
+        if (acctsWithOpps.get(a.Id).Opportunities.size() == 0) {
+         
+            oppList.add(new Opportunity(Name=a.Name + ' Opportunity',
+                                       StageName='Prospecting',
+                                       CloseDate=System.today().addMonths(1),
+                                       Contact Id=a.Id));
+        }           
+    }
+    if (oppList.size() > 0) {
+        insert oppList;
+    }
+}
+
+![Screen Shot 2021-06-24 at 21 52 09](https://user-images.githubusercontent.com/86447218/123362566-83bbb800-d536-11eb-9489-1dadffa791f3.png)
+
 
 EJERCICIO 7
 Responder las siguientes preguntas brevemente sobre:
@@ -223,7 +250,6 @@ Salesforce es un ERP
 
 Imagenes
 ![Screen Shot 2021-06-24 at 19 11 12](https://user-images.githubusercontent.com/86447218/123350152-008f6780-d520-11eb-8579-b24375a35a09.png)
-![2fb5f9f4-ddab-4a61-bcce-9d52f5083741](https://user-images.githubusercontent.com/86447218/123357157-afd33b00-d52e-11eb-8a90-7d48f7b86304.jpg)
 ![93351ee2-f5a4-4c50-9cbd-368444c01f56](https://user-images.githubusercontent.com/86447218/123357159-b06bd180-d52e-11eb-8838-f4e16d453496.jpg)
 ![28ca060d-b723-4db9-a55d-3cd7ff05e15b](https://user-images.githubusercontent.com/86447218/123357160-b06bd180-d52e-11eb-993c-b0b3a333a7ad.jpg)
 ![08a124e9-3b40-4120-b452-d48f37c303ae](https://user-images.githubusercontent.com/86447218/123357161-b1046800-d52e-11eb-9a0e-21e8b6411114.jpg)
